@@ -21,12 +21,13 @@ h1 {
     border: solid 2px #212427;
 
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    align-self: flex-start;
     flex-direction: row;
 }
 
 .filho {
+    display: flex;
+    justify-content: center;
     width: 80px;
     height: 80px;
     border-radius: 50px;
@@ -35,14 +36,20 @@ h1 {
 
 .cor1 {
     background-color: #ED145B;
+    align-self: stretch;
+    
 }
 
-.cor2 {
+.cor2  {
     background-color: #63B1BC;
+    align-self: flex-end;
+    order: 2;
 }
 
 .cor3 {
     background-color: #EFB661;
+    align-self: center;
+    order: 1;
 }
 
 .instrucoes {
